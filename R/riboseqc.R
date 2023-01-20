@@ -2554,7 +2554,8 @@ prepare_annotation_files<-function(annotation_directory,twobit_file,gtf_file,sci
                          "organism_biocview: ", scientific_name,"\n",
                          "BSgenomeObjname: ",scientific_name,"\n",
                          "seqs_srcdir: ",dirname(twobit_file),"\n",
-                         "seqfile_name: ",basename(twobit_file),sep="")
+                         "seqfile_name: ",basename(twobit_file),sep="", "\n",
+                         "circ_seqs: character(0)")
 
 
         seed_dest<-paste(annotation_directory,"/",basename(twobit_file),"_",scientific_name,"_seed",sep = "")
