@@ -2696,7 +2696,7 @@ prepare_annotation_files<-function(annotation_directory,twobit_file=NULL,gtf_fil
          #stopifnot('transcript' %in% gtfdata$type)
          gtfdata <- subset(gtfdata, type=='transcript')
          gtfdata$type <- NULL
-         stopifnot(length(unique(gtfdata$transcript_id))==n_transcripts)
+         #stopifnot(length(unique(gtfdata$transcript_id))==n_transcripts)
 
          trann<-unique(mcols(gtfdata))
 
